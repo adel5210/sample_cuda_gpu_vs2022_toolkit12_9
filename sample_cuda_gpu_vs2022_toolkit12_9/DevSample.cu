@@ -9,9 +9,10 @@
 
 #define N 1000000
 
+//grid-stride loop
 __global__ void add(int* a, int* b) {
-	int index = threadIdx.x;
-	int stride = blockDim.x;
+	int index = threadIdx.x + blockDim.x * blockIdx.x;
+	int stride = blockDim.x * gridDim.x;
 
 	for (int i = index; i < N; i+=stride) {
 		a[i] += b[i];
@@ -30,6 +31,9 @@ int main()
 	//allocate unified memory
 	cudaMallocManaged(&a, N * sizeof(int));
 	cudaMallocManaged(&b, N * sizeof(int));
+
+	cudaMemPrefetchAsync(a, N * sizeof(int), 0, 0); //0 signifies the gpu id
+	cudaMemPrefetchAsync(b, N * sizeof(int), 0, 0); //0 signifies the gpu id
 
 	for (size_t i = 0; i < N; i++)
 	{
