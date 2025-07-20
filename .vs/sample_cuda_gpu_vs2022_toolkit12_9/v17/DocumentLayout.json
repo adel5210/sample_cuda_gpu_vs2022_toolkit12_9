@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Adel\\source\\repos\\sample_cuda_gpu_vs2022_toolkit12_9\\",
+  "WorkspaceRootPath": "D:\\repos\\sample_cuda_gpu_vs2022_toolkit12_9\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DFEFEB98-4EC2-8B8D-E5E6-8CB35A0E5E1B}|sample_cuda_gpu_vs2022_toolkit12_9\\sample_cuda_gpu_vs2022_toolkit12_9.vcxproj|C:\\Users\\Adel\\source\\repos\\sample_cuda_gpu_vs2022_toolkit12_9\\sample_cuda_gpu_vs2022_toolkit12_9\\DevSample.cu||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{DFEFEB98-4EC2-8B8D-E5E6-8CB35A0E5E1B}|sample_cuda_gpu_vs2022_toolkit12_9\\sample_cuda_gpu_vs2022_toolkit12_9.vcxproj|D:\\repos\\sample_cuda_gpu_vs2022_toolkit12_9\\sample_cuda_gpu_vs2022_toolkit12_9\\DevSample.cu||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{DFEFEB98-4EC2-8B8D-E5E6-8CB35A0E5E1B}|sample_cuda_gpu_vs2022_toolkit12_9\\sample_cuda_gpu_vs2022_toolkit12_9.vcxproj|solutionrelative:sample_cuda_gpu_vs2022_toolkit12_9\\DevSample.cu||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "DevSample.cu",
-              "DocumentMoniker": "C:\\Users\\Adel\\source\\repos\\sample_cuda_gpu_vs2022_toolkit12_9\\sample_cuda_gpu_vs2022_toolkit12_9\\DevSample.cu",
+              "DocumentMoniker": "D:\\repos\\sample_cuda_gpu_vs2022_toolkit12_9\\sample_cuda_gpu_vs2022_toolkit12_9\\DevSample.cu",
               "RelativeDocumentMoniker": "sample_cuda_gpu_vs2022_toolkit12_9\\DevSample.cu",
-              "ToolTip": "C:\\Users\\Adel\\source\\repos\\sample_cuda_gpu_vs2022_toolkit12_9\\sample_cuda_gpu_vs2022_toolkit12_9\\DevSample.cu",
+              "ToolTip": "D:\\repos\\sample_cuda_gpu_vs2022_toolkit12_9\\sample_cuda_gpu_vs2022_toolkit12_9\\DevSample.cu",
               "RelativeToolTip": "sample_cuda_gpu_vs2022_toolkit12_9\\DevSample.cu",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-07-19T11:15:17.86Z",
               "EditorCaption": ""

@@ -10,7 +10,10 @@
 #define N 1000000
 
 __global__ void add(int* a, int* b) {
-	for (int i = 0; i < N; i++) {
+	int index = threadIdx.x;
+	int stride = blockDim.x;
+
+	for (int i = index; i < N; i+=stride) {
 		a[i] += b[i];
 	}
 }
@@ -34,7 +37,7 @@ int main()
 		b[i] = std::rand() % 100;
 	}
 
-	add << <1, 1 >> > (a, b);
+	add << <1, 256 >> > (a, b);
 
 	//Block until the kernel is done
 	cudaDeviceSynchronize();
