@@ -41,7 +41,7 @@ int main()
 		b[i] = std::rand() % 100;
 	}
 
-	add << <1, 256 >> > (a, b);
+	add << <1, 1024 >> > (a, b);
 
 	//Block until the kernel is done
 	cudaDeviceSynchronize();
