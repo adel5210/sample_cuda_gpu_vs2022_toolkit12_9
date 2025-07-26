@@ -1,3 +1,7 @@
+#ifndef CUDACC
+#define CUDACC
+#endif
+
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
 #include <stdio.h>
@@ -6,16 +10,22 @@
 #include <random>
 #include <cstdlib>
 #include <ctime>
+#include <cuda.h>
+#include <cuda_runtime_api.h>
+
 
 #define N 1000000
 
 //grid-stride loop
 __global__ void add(int* a, int* b) {
+	__shared__ int shared_a[1024];
+
 	int index = threadIdx.x + blockDim.x * blockIdx.x;
 	int stride = blockDim.x * gridDim.x;
 
 	for (int i = index; i < N; i+=stride) {
 		a[i] += b[i];
+		shared_a[i] = a[i];
 	}
 }
 
@@ -23,7 +33,7 @@ int main()
 {
 	printf("Run CUDA samples\n");
 
-	std::srand(static_cast<unsigned>(std::time(nullptr)));
+	std::srand(std::time(0));
 
 	int* a;
 	int* b;

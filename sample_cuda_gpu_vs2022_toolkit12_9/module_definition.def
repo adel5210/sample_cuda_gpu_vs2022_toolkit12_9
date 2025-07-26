@@ -1,2 +1,2 @@
 EXPORTS
-	extern_method1			@1
+	someMethod			@1
